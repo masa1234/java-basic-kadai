@@ -5,17 +5,27 @@ public class Car_Chapter15 {
   private int speed = 10;
 
   public void gearChange(int afterGear) {
-    // ギアが1から5以外は時速10km
-    if (afterGear < 1 || afterGear > 5) {
-      System.out.println("ギアを" + this.gear + "から" + afterGear + "に切り替えました");
-      afterGear = 1;
-      gear = afterGear;
-      this.speed = speed * gear;
-    } else {
-      System.out.println("ギアを" + this.gear + "から" + afterGear + "に切り替えました");
-      gear = afterGear;
-      this.speed = speed * gear;
+    switch (afterGear) {
+      case 1:
+        this.speed = 10;
+        break;
+      case 2:
+        this.speed = 20;
+        break;
+      case 3:
+        this.speed = 30;
+        break;
+      case 4:
+        this.speed = 40;
+        break;
+      case 5:
+        this.speed = 50;
+        break;
+      default:
+        this.speed = 10;
+        break;
     }
+    System.out.println("ギアを" + this.gear + "から" + afterGear + "に切り替えました");
   }
 
   public void run() {
