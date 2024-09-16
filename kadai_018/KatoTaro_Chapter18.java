@@ -8,10 +8,7 @@ public class KatoTaro_Chapter18 extends Kato_Chapter18 {
 
   @Override
   public void eachIntroduce() {
-    execIntroduce();
-    commonIntroduce();
     System.out.println("私はJavaが得意です");
-
   }
 
 }

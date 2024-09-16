@@ -6,12 +6,16 @@ public abstract class Kato_Chapter18 {
   // 名を表す
   public String givenName;
   // 住所を表す
-  public String address;
+  public String address = "住所は東京都中野区〇×です";
 
   // 共通の紹介を出力する
   public void commonIntroduce() {
-    System.out.println("住所は東京都中野区〇×です");
+    System.out.println(address);
+  }
 
+  public Kato_Chapter18() {
+    commonIntroduce();
+    eachIntroduce();
   }
 
   // 個別の紹介を出力する
