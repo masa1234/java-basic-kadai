@@ -10,12 +10,8 @@ public abstract class Kato_Chapter18 {
 
   // 共通の紹介を出力する
   public void commonIntroduce() {
+    System.out.println("名前は" + familyName + givenName + "です");
     System.out.println(address);
-  }
-
-  public Kato_Chapter18() {
-    commonIntroduce();
-    eachIntroduce();
   }
 
   // 個別の紹介を出力する
@@ -23,8 +19,8 @@ public abstract class Kato_Chapter18 {
 
   // 紹介を実行する
   public void execIntroduce() {
-    System.out.println("名前は" + familyName + givenName + "です");
-
+    commonIntroduce();
+    eachIntroduce();
   }
 
 }
