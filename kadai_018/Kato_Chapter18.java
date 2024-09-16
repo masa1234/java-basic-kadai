@@ -2,7 +2,7 @@ package kadai_018;
 
 public abstract class Kato_Chapter18 {
   // 姓を表す
-  public String familyName;
+  public String familyName = "加藤";
   // 名を表す
   public String givenName;
   // 住所を表す
@@ -10,6 +10,7 @@ public abstract class Kato_Chapter18 {
 
   // 共通の紹介を出力する
   public void commonIntroduce() {
+    System.out.println("住所は東京都中野区〇×です");
 
   }
 
@@ -18,6 +19,7 @@ public abstract class Kato_Chapter18 {
 
   // 紹介を実行する
   public void execIntroduce() {
+    System.out.println("名前は" + familyName + givenName + "です");
 
   }
 
