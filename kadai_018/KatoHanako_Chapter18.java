@@ -9,6 +9,8 @@ public class KatoHanako_Chapter18 extends Kato_Chapter18 {
 
   @Override
   public void eachIntroduce() {
+    execIntroduce();
+    commonIntroduce();
     System.out.println("趣味は読書です");
   }
 
